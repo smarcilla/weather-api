@@ -1,0 +1,12 @@
+echo "Running pre-push checks..."
+
+# e2e tests
+echo "Running e2e tests..."
+pnpm test || exit 1
+
+
+# Build
+echo "Building..."
+pnpm build || exit 1
+
+echo "Pre-push checks passed!"

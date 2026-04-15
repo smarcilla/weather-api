@@ -1,0 +1,41 @@
+{
+  "name": "weather-api",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "start:dev": "tsx watch src/index.ts",
+    "build": "tsc --noEmit false",
+    "start:prod": "node dist/index.js",
+    "test": "vitest run",
+    "lint": "eslint src e2e",
+    "lint:fix": "eslint src e2e --fix",
+    "format:check": "prettier --check src e2e",
+    "format:fix": "prettier --write src e2e",
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.33.0",
+  "dependencies": {
+    "@types/supertest": "^7.2.0",
+    "express": "^5.2.1",
+    "supertest": "^7.2.2",
+    "vitest": "^4.1.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/express": "^5.0.6",
+    "@types/node": "^25.6.0",
+    "eslint": "^10.2.0",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "prettier": "^3.8.3",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2",
+    "typescript-eslint": "^8.58.2"
+  }
+}
